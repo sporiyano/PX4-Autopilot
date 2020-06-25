@@ -64,11 +64,7 @@ public:
 	NotchFilterArray() = default;
 	~NotchFilterArray() = default;
 
-	/**
-	 * Add new raw values to the filter using the Direct form II.
-	 *
-	 * @return retrieve the filtered result
-	 */
+	// Filter array of samples in place using the Direct form II.
 	inline void apply(T samples[], uint8_t num_samples)
 	{
 		for (int n = 0; n < num_samples; n++) {

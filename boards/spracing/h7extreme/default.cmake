@@ -14,11 +14,12 @@ px4_add_board(
 #		TEL4:/dev/ttyS3
 	DRIVERS
 		adc/board_adc
-		barometer # all available barometer drivers
+		#barometer # all available barometer drivers
+		barometer/bmp388
 		#batt_smbus
 		camera_capture
 		camera_trigger
-		differential_pressure # all available differential pressure drivers
+		#differential_pressure # all available differential pressure drivers
 		distance_sensor # all available distance sensor drivers
 		dshot
 		gps
@@ -28,7 +29,7 @@ px4_add_board(
 		#imu/adis16477
 		#imu/adis16497
 		#imu/bmi088
-		imu/mpu6000
+		#imu/mpu6000
 		imu/invensense/icm20602
 		#imu/mpu9250
 		#irlock
